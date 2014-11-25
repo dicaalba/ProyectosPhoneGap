@@ -28,12 +28,12 @@ function capturePhoto() {
 
 function onSuccess(imageData) {
     document.getElementById("foto").style.backgroundImage="url('data:image/jpeg;base64,"+imageData+"')";
-    document.getElementById("foto").style.backgroundSize="100% 100%";
+    document.getElementById("foto").style.backgroundSize="50% 50%";
 }
 
 function onPhotoURISuccess(imageURI) {
     document.getElementById("foto").style.backgroundImage="url('"+imageURI+"')";
-    document.getElementById("foto").style.backgroundSize="100% 100%";
+    document.getElementById("foto").style.backgroundSize="50% 50%";
 }
 
 function onFail(message) {

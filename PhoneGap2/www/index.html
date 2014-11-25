@@ -5,16 +5,24 @@
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
+        <title>Camara</title>
     </head>
     <body>
         
         <div id="foto"></div>
-        
+
         <div id="menu">
+
+            <form action="#" method="post" >
+
+                <input type="text" name="nombre" required="required" placeholder="Nombre" style="margin-left: 40%; border-radius: 5px;"><br>
+                <input type="text" name="cedula" required="required" placeholder="Cédula" style="margin-left: 40%; margin-top: 1%; border-radius: 5px;">
+
             <div id="contenedorMenu">
                 <button id='btn-foto' ontouchend="capturePhoto()">Tomar Foto</button>
             </div>
+
+            </form>
         </div>
         
         <script type="text/javascript" src="phonegap.js"></script>
